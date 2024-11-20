@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.140.1",
+  "rushVersion": "5.113.4",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "8.15.8",
+  "pnpmVersion": "8.15.4",
 
   // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
@@ -95,8 +95,8 @@
    * To remove these restrictions, you could set projectFolderMinDepth=1
    * and set projectFolderMaxDepth to a large number.
    */
-  // "projectFolderMinDepth": 2,
-  // "projectFolderMaxDepth": 2,
+  "projectFolderMinDepth": 1,
+  "projectFolderMaxDepth": 2,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -369,10 +369,7 @@
     //    * a key benefit of monorepos.  However there are occasional situations where
     //    * installing from NPM is needed.  A classic example is a cyclic dependency.
     //    * Imagine three Rush projects: "my-toolchain" depends on "my-tester", which depends
-    //    * on "my-library".  Suppose that we add "my-toolchain" to the "devDependencies"
-    //    * of "my-library" so it can be built by our toolchain.  This cycle creates
-    //    * a problem -- Rush can't build a project using a not-yet-built dependency.
-    //    * We can solve it by adding "my-toolchain" to the "decoupledLocalDependencies"
+    //    * on "my-library".  Suppose that we add "my-toolchain" to the "decoupledLocalDependencies"
     //    * of "my-library", so it builds using the last published release.  Choose carefully
     //    * which package to decouple; some choices are much easier to manage than others.
     //    *
@@ -437,6 +434,11 @@
     {
       "packageName": "@optichads-app/shared-ui",
       "projectFolder": "packages/shared-ui",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@optichads-app/optichads-web",
+      "projectFolder": "apps/optichads-web",
       "shouldPublish": false
     }
   ]
