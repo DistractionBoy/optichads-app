@@ -9,7 +9,7 @@ const titleTextWrapper = cn(
 );
 
 const listWrapper = cn(
-  "ml-0.5 text-white inline-flex flex-col overflow-hidden",
+  "ml-0.5 text-white xl:text-primary inline-flex flex-col overflow-hidden",
   "h-[calc(theme(fontSize.base)*theme(lineHeight.tight))] xxs:h-[calc(theme(fontSize.xl)*theme(lineHeight.tight))]",
   "sm:h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))]"
 );
