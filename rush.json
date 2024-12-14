@@ -440,6 +440,11 @@
       "packageName": "@optichads-app/optichads-web",
       "projectFolder": "apps/optichads-web",
       "shouldPublish": false
+    },
+    {
+      "packageName": "@optichads-app/millyfam",
+      "projectFolder": "apps/millyfam",
+      "shouldPublish": false
     }
   ]
 }
