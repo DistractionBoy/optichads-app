@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel:dev": "rush install && rush build && npm vercel dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",

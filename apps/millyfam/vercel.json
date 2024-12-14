@@ -1,3 +1,4 @@
 {
-  "installCommand": "npm install --no-workspace-root --include-workspace-root"
+  "installCommand": "",
+  "workspace": "../../"
 }
